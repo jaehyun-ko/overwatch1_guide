@@ -1,0 +1,42 @@
+\usepackage[utf8]{inputenc}       		% For setting encoding
+\usepackage[margin=1in]{geometry}		% For setting page margins
+\usepackage{booktabs}             		% For table rules
+\usepackage{setup/ob-chapstyles}
+\usepackage{graphicx}             		% For adding figures
+\usepackage{float}                		% For floating environment
+\usepackage{longtable}            		% For long tables
+\usepackage{caption}              		% For custom captions
+\usepackage{subcaption}
+% \usepackage[acronym,toc]{glossaries}	% For making glossaries
+% \usepackage[doublespacing]{setspace}	% For setting line spacing
+% \usepackage{times}						% For using times font
+% \usepackage{kotex}		    			% For using Korean text
+\usepackage{setup/kotex-sections}		% For using Chapter, Section Name in Korean
+\usepackage{lipsum}						% For using random text
+% \usepackage{todonotes}					% For adding to-do notes
+\usepackage{hyperref}					% For cross-referencing
+\usepackage[backend=bibtex8,style=ieee]{biblatex}
+\usepackage{mwe}                        % loads »blindtext« and »graphicx«
+\usepackage{scalerel,amssymb}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{minted}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+
+\addbibresource{ref.bib}
+\def\msquare{\mathord{\scalerel*{\Box}{gX}}}
+\usepackage{epstopdf}
+\epstopdfDeclareGraphicsRule{.tif}{png}{.png}{convert #1 \OutputFile}
+\AppendGraphicsExtensions{.tif}
+
+\renewcommand\thesubfigure{(\alph{subfigure})}
+\captionsetup[sub]{
+  labelformat=simple
+}
+\def\figureautorefname{그림~}
+
+
+% \kscntformat{section}{제~}{~장}	

@@ -1,0 +1,108 @@
+\documentclass[a4paper,chapter,11pt]{oblivoir}
+
+%%%%%%%%%%%%%%%%
+% Front Matter %
+%%%%%%%%%%%%%%%%
+
+\input{setup/packages}							% Declare packages
+
+%%%%%%%%%%
+% Title, Authors, Date %
+%%%%%%%%%%
+\input{covers/cap}
+
+\begin{document}
+
+% \title{마이크로프로세서실험 Lab1 보고서}
+% \author{20181485 고재현}
+% \date{10 May 2021}
+%%%%%%%%%%
+% covers %
+%%%%%%%%%%
+
+% \input{covers/cover_outer.tex}					% Text for outer cover
+% \input{covers/cover_inner.tex}					% Text for inner cover
+% \input{covers/judges.tex}				    	% Text for inner cover
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% Table of Contents %
+%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\begin{abstract}
+이 문서는 오버워치를 플레이하는 사람들이 참고할 만한 상황별 가이드를 제공하는 것을 목적으로 작성되었다.\\
+승리를 목적으로 의도적으로 구성된 영웅 모음을 조합이라고 한다면 오버위치 최상위 경쟁전과 프로경기는 해당 패치에서 최강인 조합 즉 메타 조합을 찾는 과정인 '과도기' 를 지난 뒤, 각 팀의 메타 조합의 운영 숙련도를 겨루는 '안정기' 두 phase로 구성되어 있었다.\\
+이에 오버워치 개발진은 메타 조합을 없애기 위해 패치를 거듭하고 있다. 단적인 예로 이 서문이 작성되고 있는 21년 7월에는 로드호그의 고철총 데미지의 미세한 조정을 통해 OP와 쓰레기 사이의 어느 지점에 수렴하도록 노력 중이다. 현 시점, 리그나 최상위 경쟁전의 영웅 사용 빈도를 살펴보면 특정 영웅을 특정 전장에 사용하거나 팀 컬러에 맞는 영웅을 사용하고 있는 것을 확인할 수 있다. 즉 메타 조합을 따로 찾지 않아도, 각 영웅들의 시너지를 만들 수 있도록 조합을 구성하고 알맞게 운영한다면 승리라는 목적을 쟁취할 수 있다.\\
+이를 뒤집어서 생각하면 이제는 어느 영웅을 기용할지 면밀하게 생각함과 동시에 상황에 따라 다르게 운영해야 한다. 이에 대한 판단 기준을 1편에서 마련하고 기준에 따른 판단 결과, 즉 각 영웅의 상황별 운영법과 피지컬 훈련법을 2편에서 살펴본다.
+\end{abstract}
+
+\pagenumbering{roman}                           % Start page numbering in Roman numerals
+\tableofcontents*        						% Add table of contents
+%\thispagestyle{empty}							% Suppress the page number
+\clearpage
+\oblivoirchapterstyle{obbianchi}
+
+%%%%%%%%%%%%%%%%%
+% preliminaries %
+%%%%%%%%%%%%%%%%%
+
+% \addcontentsline{toc}{section}{\listfigurename} % Add list of figures to table of contents
+% \listoffigures									% add list of figures
+% \clearpage
+
+% \addcontentsline{toc}{section}{\listtablename} 	% Add list of figures to table of contents
+% \listoftables									% Add list of figures
+% \clearpage
+
+% \input{text/abstract_korean}		      		% Text for Korean Abstract
+
+\setcounter{table}{0}		                    % Reset table counter
+\setcounter{figure}{0}		                    % Reset figure counter
+
+%%%%%%%%%%%%%
+% Main Text %
+%%%%%%%%%%%%%
+
+\pagenumbering{arabic}							% Start page numbering in Arabic numerals
+
+% \input{text/purpose}					    % chapter 1
+% \part{피지컬}
+\input{text/aim}
+% \part{뇌지컬}
+\input{text/resource}
+\input{text/resource_2}
+\input{text/Line}
+\input{text/State}
+\input{text/overflow}
+
+					    % chapter 2
+
+\input{text/comp}                       % chapter 3
+
+% \input{text/4_ discussion}					% eval
+
+ 			% related
+
+% \input{text/6_reference.tex}			% conclusion
+
+% \input{text/Appendices.tex} 					% additional chapters
+
+%%%%%%%%%%%%%%%%%%%%%%
+% References Section %
+%%%%%%%%%%%%%%%%%%%%%%
+
+% \addcontentsline{toc}{section}{참고 문헌}		% Add references section to table of contents
+\printbibliography[title={참고 문헌}]
+\clearpage
+
+% \input{text/abstract_english.tex} 			    % Text for acknowledgement
+
+% \input{text/acknowledgement.tex} 			    % Text for acknowledgement
+
+
+% \bibliography{ref}				                % Add bibliography file
+% \bibliographystyle{ieeetr}			    	    % Set bibliography style
+
+
+\end{document}

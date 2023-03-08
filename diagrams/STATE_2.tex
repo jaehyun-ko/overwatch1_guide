@@ -1,0 +1,18 @@
+\begin{center}
+\begin{tikzpicture}[>=stealth', shorten >=1pt, auto,
+    node distance=20cm, scale=1, 
+    transform shape, align=center, 
+    state/.style={circle, draw, minimum size=1.5cm}]
+    \node[state] (1) at (1.5,0) {Reset};
+    \node[state] (2) at (0,0) {Push};
+    \node[state] (3) at (3,0) {Pull};
+    \path[thick,->]     (1) edge[bend left, above] node{} (2)
+                        (2) edge[bend left, below] node{} (1)
+                        (2) edge[] node {} (3)
+                        (3) edge[] node{} (1);
+    % \path[thick, ->]    (1) edge[loop above] node{} (1)
+    %                     (2) edge[out=240,in=210, looseness=7] node{} (2)
+    %                     (3) edge[out=330,in=300, looseness=7] node{} (3);
+                        
+\end{tikzpicture}
+\end{center}
